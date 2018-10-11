@@ -12,7 +12,7 @@ class Student
   end
 
   def self.create_table
-    sql = <-- TEST
+    sql = <<- TEST
       CREATE TABLE IF NOT EXISTS students (
       id INTEGER PRIMARY key,
       name TEXT,
