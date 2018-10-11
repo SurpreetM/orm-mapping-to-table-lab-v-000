@@ -11,6 +11,19 @@ class Student
     @id = id
   end
 
+  def self.create_table
+    sql = <-- TEST
+      CREATE TABLE IF NOT EXISTS students (
+      id INTEGER PRIMARY key,
+      name TEXT,
+      grade TEXT,
+      )
+      TEST
+    DB[:conn].execute(sql)
+    end
+
+  end
+
 
 
 end
